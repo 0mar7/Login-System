@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Smart Login</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container py-5 ">
+        <div
+            class="smartBox bg-transparent w-75 m-auto d-flex justify-content-center align-items-center flex-column rounded-3 ">
+            <h1 class=" text-white bg-gradient mt-5  ">Smart Login System</h1>
+
+            <div class="m-2 w-75">
+                <input id="userName" type="text" class="form-control rounded-pill" placeholder="Enter your Name">
+                <p id="userNameAlert" class="alert alert-danger p-1 rounded-pill d-none">Start with A capital
+                    (uppearcase) letter</p>
+            </div>
+
+            <div class="m-2 w-75">
+                <input id="userEmail" type="email" class="form-control rounded-pill" placeholder="Enter your Email">
+                <p id="userEmailAlert" class="alert alert-danger p-1 rounded-pill d-none">name@example.com</p>
+            </div>
+
+            <div class="m-2 w-75">
+                <input id="userPassword" type="password" class="form-control rounded-pill"
+                    placeholder="Enter your Password">
+                <p id="userPasswordAlert" class="alert alert-danger p-1 rounded-pill d-none">you must strength your
+                    password, from 5 to 15
+                    characters</p>
+            </div>
+
+            <p id="success" class="text-warning text-uppercase fw-bold d-none">Success! Press Sign in to Login..</p>
+            <p id="tryAgain" class="text-danger fw-bold d-none">Sign up Failed! Try again</p>
+            <p id="accountExist" class="text-danger d-none">This Email already Register! Try another Email. </p>
+
+            <button onclick="signUp()" id="signupBtn" class="btn fw-bold btn-outline-light bg-gradient rounded-pill w-25 m-3">Sign
+                Up</button>
+            <p class="text-center text-white fw-bold ">Already Have Account? <a class=" text-white text-decoration-none"
+                    href="index.html">Sign in</a></p>
+            <a href="index.html" class="d-none btn btn-outline-success mb-2" id="signIn">Sign In</a>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

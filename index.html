@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Smart Login</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container py-5 ">
+        <div class="smartBox w-75 m-auto d-flex justify-content-center align-items-center flex-column rounded-3 ">
+            <h1 class=" text-white bg-gradient m-5">Smart Login System</h1>
+
+
+            <input id="loginEmail" type="email" class="form-control w-75 my-2 rounded-pill "
+                placeholder="Enter your Email">
+            <input id="loginPassword" type="password" class="form-control w-75 my-2 rounded-pill "
+                placeholder="Enter your Password">
+
+
+            <p id="fillAlert" class="alert alert-danger m-1 p-1 d-none">Fill the Inputs</p>
+            <p id="wrongAlert" class="alert alert-danger m-1 p-1 d-none">Your Email or Password Incorrect</p>
+            <a class="btn btn-outline-light w-25 m-3 bg-gradient rounded-pill text-decoration-none" id="loginBtn"
+                onclick="login()">Login</a>
+            <p class="text-center text-white fw-bold">Don't Have an Account? <a class="text-white text-decoration-none"
+                    href="signUp.html">Sign Up</a></p>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
